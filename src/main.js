@@ -1,4 +1,5 @@
 import Navigo from "navigo";
+import Detail from "./pages/detail";
 import HomePage from "./pages/home";
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
@@ -17,7 +18,7 @@ router.on({
     },
     "/news/:id": (value) => {
         console.log(value.data.id);
-        print(DetailNewsPage.render(value.data.id));
+        print(Detail.render(value.data.id));
     },
 });
 
