@@ -2,7 +2,7 @@ const data = [
     {
         createdAt: "2022-01-10T07:26:52.549Z",
         title: "Vinh danh 295 sinh viên FPT Poly Technic học kì Spring 2018",
-        img: "../../image/post.png",
+        img: "https://media-cdn.laodong.vn/storage/newsportal/2022/1/6/992415/Ronaldo-Mu-Wolves.jpg?w=414&h=276&crop=auto&scale=both",
         desc: "Tối nay 16/06/2018, Cao đẳng FPT Polytechnic Hà Nội đã tổ chức Lễ tôn vinh Ong vàng Poly, tuyên dương 295 cá nhân và tập thể có thành tích xuất sắc nhất trong học tập cũng như hoạt động",
         id: "1",
     },
