@@ -3,7 +3,7 @@ import data from "../data";
 const News = {
     render() {
         return /* html */`
-        <h2 class="font-semibold text-2xl text-blue-900 my-4 uppercase">Tin tức học lập</h2>
+        <h2 class="font-semibold text-2xl text-blue-900 my-4 uppercase">Tin tức học tập</h2>
         <div class="news">
             <div class="grid grid-cols-3 gap-8">
                     ${data.map((post) => `
