@@ -3,6 +3,7 @@ import Detail from "./pages/detail";
 import HomePage from "./pages/home";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
+import Dashboard from "./admin/dashboard";
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
     document.getElementById("app").innerHTML = content;
@@ -17,6 +18,9 @@ router.on({
     },
     "/signup" : () => {
         print(Signup.render());
+    },
+    "/dashboard" : () => {
+        print(Dashboard.render());
     },
     "/about": () => {
         print("About Page");
