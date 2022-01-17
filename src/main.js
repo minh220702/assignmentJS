@@ -5,6 +5,8 @@ import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 import Dashboard from "./admin/dashboard";
 import News from "./admin/news";
+import editSp from "./admin/edit";
+import addSp from "./admin/add";
 const router = new Navigo("/", { linksSelector: "a" });
 const print = (content) => {
     document.getElementById("app").innerHTML = content;
@@ -36,6 +38,12 @@ router.on({
         console.log(value.data.id);
         print(Detail.render(value.data.id));
     },
+    "/admin/news/:id/edit": (value) => {
+        print(editSp.render(value.data.id));
+      },
+    "/admin/news/add": () => {
+        print(addSp.render());
+      },  
     
 });
 
